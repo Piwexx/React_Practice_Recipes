@@ -24,7 +24,7 @@ export const Search = () => {
             <Card key={recipe.id}>
                 <img src={recipe.image} alt={recipe.title}></img>
                 <h4>{recipe.title}</h4>
-                <Link to={`/recipe?id&${recipe.id}`}></Link>
+                <Link to={`/recipe/${recipe.id}`}>View</Link>
             </Card>
           )
         })}
